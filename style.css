@@ -1,5 +1,6 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Varela Round', sans-serif;
+  background-color: rgb(19, 24, 68)
 }
 
 a {
@@ -14,8 +15,24 @@ a:hover {
   clear: both;
 }
 
+.navspace{
+  margin-bottom: 110px
+}
+
+.navbar header h1{
+  color: white;
+}
+
+.navbar{
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  background-color: rgb(3, 3, 36);
+}
+
 header{
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   padding: 20px;
   border-bottom: 1px solid rgb(0, 174, 255);
 }
@@ -32,12 +49,14 @@ header nav ul li {
   margin: 0 auto; /* centers projects div */
   width: 90%; /* adds space on either side*/
   max-width: 600px; /* keeps div from getting too wide */
+  color: white;
 }
 
 .project {
   margin-bottom: 20px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgb(0, 174, 255);
+  color: white;
 }
 
 .project img, #aboutme img {
