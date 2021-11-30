@@ -1,14 +1,62 @@
 body {
-  font-family: 'Varela Round', sans-serif;
-  background-color: rgb(19, 24, 68)
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  background: url('https://i.ytimg.com/vi/16wO20Oh_Ro/maxresdefault.jpg') no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+@media (max-width: 800px) {
+  .navLinks {
+    display: none;
+    color: blue;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -100px;
+  }
+
+  .project-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .cmugame {
+    width: 0px;
+    height: 0px;
+  }
+
+  .project{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project img{
+    float: center;
+    width: 7vw;;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }
 
 a {
-  color: rgb(255, 81, 0);
+  color: #dd4a23
 }
 
 a:hover {
-  color: #00AAFF;
+  color: #23b6dd
 }
 
 .clear{
@@ -26,26 +74,75 @@ a:hover {
 .navbar{
   overflow: hidden;
   position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-  background-color: rgb(3, 3, 36);
+  background-color: rgb(0, 0, 0);
+  padding: 40px 100px 40px 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  white-space: nowrap;
+  z-index: 1;
 }
 
-header{
-  margin-bottom: 0px;
-  padding: 20px;
-  border-bottom: 1px solid rgb(0, 174, 255);
+.title {
+  float: left;
 }
 
 header h1 {
 font-size: 2em;
 }
 
+.navLinks {
+  float: right;
+}
+
+.navLinks ul li {
+  display: inline-block;
+  padding-right: 30px;
+}
+
+.navLinks ul li a {
+  padding-bottom: 3px;
+  border-width: 2px;
+  color: #dd4a23;
+  text-decoration: none;
+  transition: 0.2s;
+  font-size: 1.3em;
+}
+
+.navLinks ul li a:hover {
+  border-bottom: 4px solid #dd4a23;
+}
+
+.navLinks ul li a.selected {
+  border-bottom: 4px solid #dd4a23;
+}
+
+.navLinks ul li:last-child {
+  margin-right: 170px;
+}
+
 header nav ul li {
   display: inline;
 }
 
-#project-container, #aboutme { 
+#progressBarCont {
+  width: 100%;
+  position: fixed;
+  height: 20px;
+  z-index: 1;
+  background-color: gray;
+  margin-top: -40px;
+}
+
+#progressBar {
+  background: #c59df1;
+  z-index: 1;
+  width: 0%;
+  height: 20px;
+}
+
+.project-container, #aboutme { 
   margin: 0 auto; /* centers projects div */
   width: 90%; /* adds space on either side*/
   max-width: 600px; /* keeps div from getting too wide */
@@ -53,10 +150,13 @@ header nav ul li {
 }
 
 .project {
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgb(0, 174, 255);
+  padding: 30px 40px 30px 40px;
+  border-bottom: 1px solid #dd4a23;
   color: white;
+  background-color: black;
+  border-radius: 20px;
+  margin-top: 5%;
+	margin-bottom: 5%;
 }
 
 .project img, #aboutme img {
@@ -68,5 +168,49 @@ header nav ul li {
 
 .project h2, #aboutme h2 {
   font-size: 1.5em;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
+
+.project a {
+  margin: 1px 0px;
+  font-size: 0.8em;
+  border: 3px solid #dd4a23;
+  border-radius: 25px;
+  padding: 10px 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.25s;
+  max-width: 170px;
+}
+
+.project a:hover {
+  color: #23b6dd;
+  border-color: #23b6dd;
+  padding: 10px 50px;
+}
+
+.project p {
+  margin-top: 30px;
+}
+
+#imageButton {
+  height: 30px;
+  width: 60px;
+  border-radius: 20px;
+  border-color: aqua;
+  color: aqua;
+  font-weight: bold;
+  background-color: black;
+  opacity: 75%;
+  border-width: 2px;
+  transition: 0.25s;
+  border-style: solid;
+}
+
+#imageButton:hover {
+  opacity: 100%;
+}
+
+#imageButton:active {
+  border-color: #dd4a23;
+  color: #dd4a23;
