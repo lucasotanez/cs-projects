@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="icon" href="img/favicon/favicon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Lucas's Projects</title>
@@ -8,30 +9,42 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@600;800&display=swap" rel="stylesheet">
+    <script src='javascripts/index.js'></script>
   </head>
  
   <body>
-   <div class='navbar'>
+    <div class='navbar'>
       <header>
-        <h1>Lucas's Projects</h1>
-        <nav>
-          <ul>
-            <li><a href='index.html'>Home</a></li>
-            <li> | </li>
-            <li><a href='aboutme.html' />About Me</a></li>
-          </ul>
-        </nav>
+        <div class='title'>
+          <h1>Lucas's Projects</h1>
+        </div>
+        <div class='navLinks'>
+          <nav>
+            <ul>
+              <li><a href='index.html'>Home</a></li>
+              <li> | </li>
+              <li><a href='aboutme.html' />About Me</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
+    </div>
+    <div id='progressBarCont'>
+      <div id='progressBar'></div>
     </div>
 
     <div class='navspace'>
     </div>
  
-    <div id='aboutme'>
-      <h2>A Little Bit About Me</h2>
-      <img src='img/dio.jpg' alt=Anime/>
-      <p>My name is Lucas. I am a junior in high school. The fellow pictured in the image to the left is not me.</p>
+
+    <div class='project-container'>
+      <div class='project'>
+        <img src='img/dio.jpg' alt=Anime/>
+        <h2>A Little Bit About Me</h2>
+        <p>My name is Lucas. I am a senior at Benicia High School.</p>
+        <div class='clear'></div>
+      </div>
     </div>
 
   </body>
