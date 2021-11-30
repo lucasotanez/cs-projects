@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="img/favicon/favicon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Lucas's Projects</title>
@@ -12,51 +9,72 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@600;800&display=swap" rel="stylesheet">
   </head>
  
   <body>
     <div class='navbar'>
       <header>
-        <h1>Lucas's Projects</h1>
-        <nav>
-          <ul>
-            <li><a href='index.html'>Home</a></li>
-            <li> | </li>
-            <li><a href='aboutme.html' />About Me</a></li>
-          </ul>
-        </nav>
+        <div class='title'>
+          <h1>Lucas's Projects</h1>
+        </div>
+        <div class='navLinks'>
+          <nav>
+            <ul>
+              <li><a href='index.html'>Home</a></li>
+              <li> | </li>
+              <li><a href='aboutme.html' />About Me</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
     </div>
+    <div id='progressBarCont'>
+      <div id='progressBar'></div>
+    </div>
+    
 
     <div class='navspace'>
     </div>
 
-    <div id='project-container'>
-      
+    <div class='project-container'>
+
       <!-- Start of project template -->
+
       <div class='project'>
-        <img src="img/beangame.png" alt="screenshot from my game"/>
-        <h2>Scratch: My Bean Game</h2>
-        <p><a href="https://scratch.mit.edu/projects/414074893/">Bean Game</a></p>
-        <p>I coded this short game in Scratch. Cross the river of beans. Avoid falling in the beans, unless you want to suffer failure in a river of baked beany goodness.</p>
+        <h2>Raspberry Pi Pico Keypad</h2>
+        <img id='keypadImg' alt='keypad images' src='img/keypad1.jpg'/><button id='imageButton'>></button>
+        <p>This keypad utilizes a Raspberry Pi Pico to send keyboard inputs. Keypad macros are fully programmable and customizable. I 3d printed the case, and used generic key switches and keycaps.
         <div class='clear'></div>
       </div>
+
       <div class='project'>
-        <img src="img/pythonpicture.png" alt="my python group picture"/>
-        <h2>Python Collaborative Task</h2>
-        <p><a href="https://docs.google.com/document/d/106fusR-tvZn-AxvOppCuHM0Lp5bd8Y0ifP4DC21ekeA/edit?usp=sharing">See our code here.</a></p>
-        <p>My AP Computer Science group and I coded this picture in python! Diao Ren is Mandarin for "Fall Guy," as in the once-popular online video game: Fall Guys.</p>
+        <!--<img src="img/pythonpicture.png" alt="my python group picture"/>-->
+        <h2>Typing Challenge</h2>
+        <img alt='typing app screenshot' src='img/wordtypetest.png'/>
+        <a target='blank' href="https://lucasotanez.github.io/word-type-test/">Word Type Test</a>
+        <p>This typing game was created using HTML, CSS, and JavaScript. In the future, I want to set up a server and add a public leaderboard to the game using Node.js and MongoDB.</p>
         <div class='clear'></div>
-      </div>  
+      </div>
+
       <div class='project'>
-        <img src="img/typingtable.png" alt="weekly typing leaderboard"/>
-        <h2>Genius Hour: Typing!</h2>
-        <p><a href="https://www.youtube.com/watch?v=_KSA2DzjPDU&feature=youtu.be">Typing in Action</a></p>
-        <p>I have been taking Typing.com's typing class for my Genius Hours in my AP Computer Science class. I used to type 65 WPM, without touch typing. Now, after beginning to learn touch typing, I average 75 WPM.</p>
+        <!--<iframe class='cmugame' width="420" height="460" src="https://academy.cs.cmu.edu/sharing/indigoMonkey2715/embed"></iframe>-->
+        <h2>AP Create</h2>
+        <a target='blank' href='https://academy.cs.cmu.edu/sharing/indigoMonkey2715'>Link to Game</a>
+        <p>I coded this game in Python using Carnegie Mellon University's sandbox IDE.</p>
         <div class='clear'></div>
+      </div> 
+      
+      <div class='project'>
+        <h2>Tutoring Site</h2>
+        <img src='img/codesnippet.png' alt='CSS code snippet'/>
+        <a target='blank' href='https://beniciatutoring.lucasotanez1.repl.co/'>Benicia Tutoring</a>
+        <p>This is the website I made for my tutoring service. I collaborated with some students to form an organization of high school tutors. Customers can use this website for information about us.</p>
+        <div class='clear'></div>
+
       </div>
       <!-- End of project template -->
     </div>
   </body>
+  <script src='javascripts/index.js'></script>
 </html>
