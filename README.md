@@ -1,2 +1,2 @@
 # cs-projects-real
-My computer science projects.
+A site for my computer science projects.
