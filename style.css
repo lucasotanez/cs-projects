@@ -1,6 +1,6 @@
 body {
   font-family: 'Encode Sans Semi Expanded', sans-serif;
-  background: url('https://i.ytimg.com/vi/16wO20Oh_Ro/maxresdefault.jpg') no-repeat center center fixed;
+  background: #1d203a; /*url('https://i.ytimg.com/vi/16wO20Oh_Ro/maxresdefault.jpg') no-repeat center center fixed; */
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
