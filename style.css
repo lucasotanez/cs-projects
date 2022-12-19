@@ -214,3 +214,28 @@ header nav ul li {
 #imageButton:active {
   border-color: #dd4a23;
   color: #dd4a23;
+}
+
+.rowOfImages{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.imgInRow {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+.imgInRow img{
+  max-width: 100%;
+  height: auto;
+}
+
+.centeredLink{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

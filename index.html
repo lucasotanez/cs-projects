@@ -4,7 +4,7 @@
     <link rel="icon" href="img/favicon/favicon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Lucas's Projects</title>
+    <title>Lucas Otanez</title>
     <link href='reset.css' rel='stylesheet' />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
     <div class='navbar'>
       <header>
         <div class='title'>
-          <h1>Lucas's Projects</h1>
+          <h1>Lucas Otanez</h1>
         </div>
         <div class='navLinks'>
           <nav>
@@ -42,6 +42,38 @@
       <!-- Start of project template -->
 
       <div class='project'>
+        <h2>C++ Chromakey</h2>
+        <!-- <img width = '400px' alt='encryption terminal use' src='img/encryptExample.png'/> -->
+        <p>Implemented chromakey (greenscreen) technology with small bitmap images in C++. Code finds an 
+          automatic threshold value when scanning the image, which ensures highest quality image 
+          projection regardless of any variation or imperfections in the files.
+        </p>
+        <div class="rowOfImages">
+          <div class="imgInRow" ><img align="center" alt='space' src='img/space.bmp'/></div>
+          <div class="imgInRow" ><img alt='bird' src='img/bird_gs.bmp'/></div>
+          <div class="imgInRow" ><img alt='bird in space' src='img/o2.bmp'/> </div>
+        </div>
+        <p>Note: I cannot post my code to GitHub due to academic
+          integrity rules, but I can show my code privately upon request.</p>
+        <div class='clear'></div>
+      </div>
+
+      <div class='project'>
+        <h2>Optical Character Recognition Project</h2>
+        <p>I made this computer vision project for my CSCI 103 class at USC. In C++, I first made a class called BigInt, 
+          which can store numbers larger than the maximum value of a C++ int variable (8 bytes). Then, I used a 
+          breadth first search algorithm to scan bitmap images of characters and accurately transcribed each digit 
+          from the image into an instance of the BigInt class. Then, using operator overloading, I allowed adding 
+          and subtracting of BigInts (see video for a quick demo).
+        </p>
+        <center><video width='400vw' height='300' src='img/ocrDemo.mp4' type='video/mp4' controls>
+        </video></center>
+        <p>Note: I cannot post my code to GitHub due to academic
+          integrity rules, but I can show my code privately upon request.</p>
+        <div class='clear'></div>
+      </div>
+
+      <div class='project'>
         <h2>Raspberry Pi Pico Keypad</h2>
         <img id='keypadImg' alt='keypad images' src='img/keypad1.jpg'/><button id='imageButton'>></button>
         <p>This keypad utilizes a Raspberry Pi Pico to send keyboard inputs. Keypad macros are fully programmable and customizable. I 3d printed the case, and used generic key switches and keycaps.</p>
@@ -54,7 +86,10 @@
       <div class='project'>
         <h2>Track and Field Timer</h2>
         <img width='400px' alt='timer image' src='img/timerImg.jpg'/>
-        <p>This keypad utilizes a Raspberry Pi Pico to send keyboard inputs. Keypad macros are fully programmable and customizable. I 3d printed the case, and used generic key switches and keycaps.</p>
+        <p>I created this large stopwatch timer for my high school's track and field team. The timer utilizes a foot pressure sensor and laser 
+          tripwire as start and stop buttons. This device contributes to a better experience for 
+          both spectators and the athletes.
+        </p>
         <br></br><a target='blank' margin-top='70px' href='https://github.com/lucasotanez/track-and-field-stopwatch'>Arduino Code</a>
         <center><video width='400vw' height='300' src='img/timerDemo.mov' type='video/mov' controls>
         </video></center>
@@ -62,11 +97,24 @@
       </div>
 
       <div class='project'>
+        <h2>EncryptoC - Password Encryption</h2>
+        <img width = '400px' alt='encryption terminal use' src='img/encryptExample.png'/>
+        <p>Encryption software for storing passwords safely. My encryption uses varied techniques 
+          to ensure the encrypted strings are as indecipherable as possible without access to the decryption executable. 
+          This encryption only works on passwords containing 20 characters or less.
+        </p>
+        <center><video width='400vw' height='300' src='img/encryptDemo.mp4' type='video/mp4' controls>
+        </video></center>
+        <div class="centeredLink"><a target='blank' href="https://github.com/lucasotanez/encryptoC/">C++ Code</a></div>
+        <div class='clear'></div>
+      </div>
+
+      <div class='project'>
         <!--<img src="img/pythonpicture.png" alt="my python group picture"/>-->
         <h2>Typing Challenge</h2>
         <img alt='typing app screenshot' src='img/wordtypetest.png'/>
-        <a target='blank' href="https://lucasotanez.github.io/word-type-test/">Word Type Test</a>
         <p>This typing game was created using HTML, CSS, and JavaScript. In the future, I want to set up a server and add a public leaderboard to the game using Node.js and MongoDB. </p>
+        <br></br><a target='blank' href="https://lucasotanez.github.io/word-type-test/">Word Type Test</a>
         <div class='clear'></div>
       </div>
 
