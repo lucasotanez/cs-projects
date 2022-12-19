@@ -226,6 +226,7 @@ header nav ul li {
 .imgInRow {
   position: relative;
   display: inline-block;
+  float: left;
   padding: 10px;
 }
 
